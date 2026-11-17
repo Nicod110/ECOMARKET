@@ -1,0 +1,95 @@
+div, header, nav, main, aside, footer, figure, caption, section, article{
+border:0px solid #a58484;
+padding: 10px 20px;
+}
+
+header {
+    background-size: cover;
+    height: 100px;
+    padding: 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header, nav, main, footer {
+  position: sticky;
+}
+.search {
+  background: #fff;
+  border: 1px solid rgba(58,8,8,0.1);
+  border-radius: 20px;
+  padding: 10px 5px;
+}
+.search input {
+  border: none;
+  outline: none;
+  font-size: 0.75rem;
+  width: 400px;
+  background: transparent;
+}
+.search button {
+  border: none;
+}
+nav {
+  display: flex;  
+  align-items: first baseline;
+  justify-content: center;
+  padding: 0px; 
+}
+.logo img {
+  width: 100px;
+  height: auto; 
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    height: 100vh;
+}
+
+.tarjeta {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    padding: 15px;
+    color: white;
+}
+
+.tarjeta::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    z-index: 0;
+}
+
+.tarjeta p {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+}
+
+.titulo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.desc {
+    font-size: 12px;
+    opacity: 0.85;
+}
+.tarjeta1 { background-image: url("../../alimentacionecologica.PNG"); }
+.tarjeta2 { background-image: url("../../cosmeticanatural.PNG"); }
+.tarjeta3 { background-image: url("../../productoslimpieza.PNG"); }
+.tarjeta4 { background-image: url("../../alimentos.PNG"); }
+.tarjeta5 { background-image: url("../../mascotas.PNG"); }
+  
